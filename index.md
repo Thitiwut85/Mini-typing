@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## สวัสดี นี่คือเกม typing
 
 You can use the [editor on GitHub](https://github.com/Thitiwut85/Mini-typing/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
