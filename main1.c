@@ -118,17 +118,17 @@ int main()//ฟังก์ชันหลัก
 		pos;
 		ln
 		pos;
-		printf("1.startgame");
+		printf("1.Startgame");
 		pos;
-		printf("2.scoreboard");
+		printf("2.Scoreboard");
 		pos;
 		printf("3.Set the time limit::");
 		pos;
 		printf("4.Help");
 		pos;
-		printf("5.About me");
+		printf("5.About game");
 		pos;
-		printf("0.exit");
+		printf("0.Exit");
 		pos;
 		printf("Enter your choice::");
 		scanf("%d",&ch);
@@ -273,7 +273,7 @@ rectangle(0,0,70,15);
 		{
 		      case 1:startgame();break;//recursive call
 		      case 2:main();break;
-		      case 3:system("cls");gotoxy(17,10);printf("#This Game is created by Shashi Kumar#");delay(1000);exit(1);
+		      case 3:system("cls");gotoxy(17,10);printf("Thank for Playing");delay(1000);exit(1);
 		      default:pos;printf("wrong choice!");pos;
 				main();
 		}
@@ -314,7 +314,7 @@ void help()//คำแนะนำในการใช้
 	system("cls");
 	//rectangle(0,0,70,15);
 	gotoxy(7,5);
-	setcolor(6);
+	setcolor(14);
 
 	printf("#......Rules of the Game......#");gotoxy(7,6);
 	printf("=>Enter your name as player name");gotoxy(7,7);
