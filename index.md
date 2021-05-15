@@ -42,9 +42,9 @@ void startgame()
 	main();
 
 	else
-	{   if(level==1)    //ถ้า level 1 คือตัวใหญ่
+	{   if(level==1)    //-----ถ้า level 1 คือตัวใหญ่
 	    	mode=65;
-	    if(level==2)    //ถ้า level 2 คือตัวเล็ก
+	    if(level==2)    //-----ถ้า level 2 คือตัวเล็ก
 			mode=97;
 		int randx, randy;
 		begin=clock();
@@ -78,7 +78,7 @@ void startgame()
 				randy = rand()%27;
 			}
 			gotoxy(randx,randy);
-			printf(" %c",r); //prints random character
+			printf(" %c",r); //-----prints random character
 			letter=getch();
 
 			if(letter!=r)
@@ -87,9 +87,9 @@ void startgame()
 			{       count++;
 				score=score+10;
 				gotoxy(28,10);
-				printf("score = %d",score);//prints score
+				printf("score = %d",score);//-----prints score
 				gotoxy(37,10);
-				printf("time spent = %d sec",time_spent);//prints time spent during game
+				printf("time spent = %d sec",time_spent);//-----prints time spent during game
 
 				if(level==1)
 				delay(400);
@@ -134,7 +134,7 @@ void startgame()
 
 		printf("Your net speed = %d letter per minute",speed);
 
-		getscore(score,speed,level);//เอาข้อมูลกับคะแนนลงไฟล์
+		getscore(score,speed,level);//-----เอาข้อมูลกับคะแนนลงไฟล์
 		++x;
 		pos;
 		printf("1. play again");pos;
