@@ -139,7 +139,7 @@ int main()//ฟังก์ชันหลัก
 			case 3:sett();main();
 			case 4:help();break;
 			case 5:About_me();break;
-			case 0:system("cls");gotoxy(17,10);printf("#This Game is created by Shashi Kumar#");delay(1000);exit(1);
+			case 0:system("cls");gotoxy(17,10);printf("Thank for Playing");delay(1000);exit(1);
 			default:main();
 		}
 
