@@ -42,7 +42,6 @@ void startgame()
 	main();
 
 	else
-
 	{   if(level==1)    //ถ้า level 1 คือตัวใหญ่
 	    	mode=65;
 	    if(level==2)    //ถ้า level 2 คือตัวเล็ก
@@ -64,7 +63,6 @@ void startgame()
 				else{
 					mode=97;
 				}
-
 			}
 			r=r%26+mode;
 			
