@@ -326,12 +326,13 @@ void help()//คำแนะนำในการใช้
 }
 
 //.......................................................................................................................................................................
-void About_me()//ไม่รู้จะเขียนไรดี
+void About_Game()
 {       system("cls");
 	gotoxy(7,7);
-	printf("Hello");
-       getch();
-       main();
+	printf("Hello, this game is mini project");gotoxy(7,8);
+	printf("Thank for credit from  Shashi Kumar");
+    getch();
+    main();
 }
 //.........................................................................
 void getscore(int score,int speed,int level)//ฟังก์ชันเอาคะแนนลงไฟล์
