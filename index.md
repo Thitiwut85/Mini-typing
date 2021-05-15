@@ -33,7 +33,7 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
-## **ตัวอย่างภาพหน้าเมนู**
+## **ตัวอย่างภาพในเกม**
 
 ![Image](https://cdn.discordapp.com/attachments/814903344803741728/843160109030572052/Main_menu.PNG)
 ![Image](https://cdn.discordapp.com/attachments/814903344803741728/843160112759177236/Select_Difficulty.PNG)
