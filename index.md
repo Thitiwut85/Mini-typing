@@ -16,6 +16,7 @@
 
 
 ```markdown
+
 void startgame()
 {       int score=0,level=1,mode=100,count=0;
 	clock_t begin;int time_spent,speed;
@@ -55,7 +56,7 @@ void startgame()
 			if(time_spent>=t)
 			break;
 			r=rand()%1000;
-			if(level==3){    //ถ้า level 3 คือตัวเล็กกับตัวใหญ่
+			if(level==3){    //-----ถ้า level 3 คือตัวเล็กกับตัวใหญ่
 				ee=rand()%2;
 				if(ee==0){
 					mode = 65;
