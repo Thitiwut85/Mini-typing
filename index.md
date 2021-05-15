@@ -18,8 +18,8 @@
 ```markdown
 void startgame()
 {       
-	
 	int score=0,level=1,mode=100,count=0;
+	
 	clock_t begin;int time_spent,speed;
 	int r,letter,ch, ee;
 	delay(500);
@@ -79,7 +79,7 @@ void startgame()
 				randy = rand()%27;
 			}
 			gotoxy(randx,randy);
-			printf(" %c",r); //-----prints random character
+			printf(" %c",r);    //-----prints random character
 			letter=getch();
 
 			if(letter!=r)
@@ -90,7 +90,7 @@ void startgame()
 				gotoxy(28,10);
 				printf("score = %d",score);//-----prints score
 				gotoxy(37,10);
-				printf("time spent = %d sec",time_spent);//-----prints time spent during game
+				printf("time spent = %d sec",time_spent);    //-----prints time spent during game
 
 				if(level==1)
 				delay(400);
@@ -135,7 +135,7 @@ void startgame()
 
 		printf("Your net speed = %d letter per minute",speed);
 
-		getscore(score,speed,level);//-----เอาข้อมูลกับคะแนนลงไฟล์
+		getscore(score,speed,level);     //-----เอาข้อมูลกับคะแนนลงไฟล์
 		++x;
 		pos;
 		printf("1. play again");pos;
@@ -145,7 +145,7 @@ void startgame()
 		scanf("%d",&ch);
 		switch(ch)
 		{
-		      case 1:startgame();break;//recursive call
+		      case 1:startgame();break;    //-----recursive call
 		      case 2:main();break;
 		      case 3:system("cls");gotoxy(17,10);printf("Thank for Playing");delay(1000);exit(1);
 		      default:pos;printf("wrong choice!");pos;
