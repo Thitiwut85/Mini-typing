@@ -31,7 +31,7 @@ void setcolor(int ForgC) //ฟังก์ชันเปลี่ยนสี
   HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
   CONSOLE_SCREEN_BUFFER_INFO csbi;
 
-                       //We use csbi for the wAttributes word.
+                       //use csbi for the wAttributes word.
  if(GetConsoleScreenBufferInfo(hStdOut, &csbi))
  {
       wColor = (csbi.wAttributes & 0xF0) + (ForgC & 0x0F);
@@ -49,7 +49,7 @@ char name[15];
 void getscore(int score,int speed,int level);
 void startgame();
 void scoreboard();
-void About_me();
+void About_Game();
 void help();
 //...............................................................................................................................................................................
 void rectangle(int x,int y,int l,int b)//สร้างสี่เหลี่ยม
@@ -96,8 +96,8 @@ int main()//ฟังก์ชันหลัก
 	x=1;
 	system("cls");//cls คือเคลียร์หน้าจอ
 	pos;
-	setcolor(12) ;
-	printf("game name");
+	setcolor(15) ;
+	printf("Speed Typing");
 	setcolor(10) ;
 	pos;
 	printf("%s",ctime(&t));
@@ -138,7 +138,7 @@ int main()//ฟังก์ชันหลัก
 			case 2:scoreboard();break;
 			case 3:sett();main();
 			case 4:help();break;
-			case 5:About_me();break;
+			case 5:About_Game();break;
 			case 0:system("cls");gotoxy(17,10);printf("Thank for Playing");delay(1000);exit(1);
 			default:main();
 		}
@@ -152,7 +152,7 @@ void startgame()
 	clock_t begin;int time_spent,speed;
 
 	int r,letter,ch, ee;
-rectangle(0,0,70,15);
+//rectangle(0,0,70,15);
 	delay(500);
 
 	system("cls");
@@ -169,7 +169,7 @@ rectangle(0,0,70,15);
 	pos;
 	printf("3.Hard");
 	pos;
-	printf("4.Back to main menu#");
+	printf("4.Back to main menu");
 	pos;
 	scanf("%d",&level);
 	if(level==4)
@@ -181,6 +181,7 @@ rectangle(0,0,70,15);
 	    	mode=65;
 	    if(level==2)    //ถ้า level 2 คือตัวเล็ก
 			mode=97;
+		int randx, randy;
 		begin=clock();
 		while(1)
 		{       system("cls");
@@ -203,7 +204,21 @@ rectangle(0,0,70,15);
 			
 			gotoxy(20,8);
 			printf("....Type the following character....");
-			gotoxy(36,11) ;
+			while(1){
+				gotoxy(20,9);
+				printf("%d", t);//จับเวลาถอยหลัง
+				Sleep(1000);
+				if(t !=0 ) {
+					t--;
+				}
+			}
+			randx = rand()%108;
+			randx++;
+			randy = rand()%27;
+			while(randy < 10){
+				randy = rand()%27;
+			}
+			gotoxy(randx,randy);
 			printf(" %c",r); //prints random character
 
 			letter=getch();
@@ -216,7 +231,7 @@ rectangle(0,0,70,15);
 				gotoxy(28,9);
 				printf("score=%d",score);//prints score
 				gotoxy(37,9);
-				printf("time_spent=%d sec",time_spent);//prints time spent during game
+				printf("time spent=%d sec",time_spent);//prints time spent during game
 
 				if(level==1)
 				delay(400);
@@ -230,18 +245,18 @@ rectangle(0,0,70,15);
 
 		delay(400);
 
-		setcolor(5); //blue text color
+		setcolor(5);
 		++x;
 		pos;
 		speed=(count*60)/time_spent ;
-	       //	symbol=2;
+
 		if(time_spent<t-1)
 		printf("You  are looser!loser!loser!Game Over!");
 		else
 		{       setcolor(11);
 			printf("Times up !Game over!");
 			pos;
-			setcolor(5);
+			setcolor(13);
 			if((speed>=40)&&(speed<=50))
 			{	printf("Good Work !Keep it up!");pos;
 
@@ -313,15 +328,14 @@ void help()//คำแนะนำในการใช้
 {
 	system("cls");
 	//rectangle(0,0,70,15);
-	gotoxy(7,5);
 	setcolor(14);
-
-	printf("#......Rules of the Game......#");gotoxy(7,6);
-	printf("=>Enter your name as player name");gotoxy(7,7);
-	printf("=>Set the time limit under option 3 in main menu(default limit is 30 sec)");gotoxy(7,8);
-	printf("=>select the level and get started :");gotoxy(7,9);
-	printf("=>Characters are displayed and you have to type them as fast as you can..");gotoxy(7,10);
-	printf("=>Avoid incorrect typing otherwise game will be over..");
+	gotoxy(40,4);
+	printf("#......Rules of the Game......#");gotoxy(15,6);
+	printf("=> Enter your name as player name");gotoxy(15,7);
+	printf("=> Set the time limit under option 3 in main menu(default limit is 30 sec)");gotoxy(15,8);
+	printf("=> select the level and get started :");gotoxy(15,9);
+	printf("=> Characters are displayed and random, you have to type them as fast as you can..");gotoxy(15,10);
+	printf("=> Avoid incorrect typing otherwise game will be over..");
 	getch();main();
 }
 
@@ -338,7 +352,7 @@ void About_Game()
 void getscore(int score,int speed,int level)//ฟังก์ชันเอาคะแนนลงไฟล์
 {
 	FILE *fp;
-	fp=fopen("file.txt","a");
+	fp=fopen("scoreboard.txt","a");
 	pos;
 	if(fp==NULL)
 	printf("error in opening file");
@@ -358,12 +372,10 @@ void scoreboard()//ฟังก์ชันหน้าโชว์คะแน�
 
 	printf("\t\t\t....The scores are...\n");
 
-	fp=fopen("file.txt","r");
+	fp=fopen("scoreboard.txt","r");
 	while((ch=fgetc(fp))!=EOF){	
 		printf("%c",ch);
 	}
 	getch();
 	main();
 }
-
-
