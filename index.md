@@ -32,7 +32,7 @@ void startgame()
     printf("Select Difficulty");
     pos;
     ln
-        pos;
+    pos;
     printf("1.Easy");
     pos;
     printf("2.Normal");
@@ -155,7 +155,7 @@ void startgame()
         scanf("%d", &ch);
         switch (ch)
         {
-        case 1:startgame();break; //----recursive call
+        case 1:startgame();break;
         case 2:main();break;
         case 3:system("cls");gotoxy(17, 10);printf("Thank for Playing");delay(1000);exit(1);
         default:pos;printf("wrong choice!");pos;
