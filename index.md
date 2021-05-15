@@ -38,11 +38,3 @@ Syntax highlighted code block
 ![Image](https://cdn.discordapp.com/attachments/814903344803741728/843160109030572052/Main_menu.PNG)
 ![Image](https://cdn.discordapp.com/attachments/814903344803741728/843160112759177236/Select_Difficulty.PNG)
 ![Image](https://cdn.discordapp.com/attachments/814903344803741728/843160115451920444/Time_set.PNG)
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Thitiwut85/Mini-typing/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
