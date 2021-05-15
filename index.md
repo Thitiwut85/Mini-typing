@@ -60,8 +60,7 @@ void startgame()
             if (time_spent >= t)
                 break;
             r = rand() % 1000;
-            if (level == 3)
-            { //-----ถ้า level 3 คือตัวเล็กกับตัวใหญ่
+            if (level == 3){ //-----ถ้า level 3 คือตัวเล็กกับตัวใหญ่
                 ee = rand() % 2;
                 if (ee == 0)
                 {
@@ -149,32 +148,17 @@ void startgame()
         getscore(score, speed, level); //-----เอาข้อมูลกับคะแนนลงไฟล์
         ++x;
         pos;
-        printf("1. play again");
-        pos;
-        printf("2. main menu");
-        pos;
-        printf("3. exit");
-        pos;
+        printf("1. play again");pos;
+        printf("2. main menu");pos;
+        printf("3. exit");pos;
         printf("Enter your choice :");
         scanf("%d", &ch);
         switch (ch)
         {
-        case 1:
-            startgame();
-            break; //recursive call
-        case 2:
-            main();
-            break;
-        case 3:
-            system("cls");
-            gotoxy(17, 10);
-            printf("Thank for Playing");
-            delay(1000);
-            exit(1);
-        default:
-            pos;
-            printf("wrong choice!");
-            pos;
+        case 1:startgame();break; //----recursive call
+        case 2:main();break;
+        case 3:system("cls");gotoxy(17, 10);printf("Thank for Playing");delay(1000);exit(1);
+        default:pos;printf("wrong choice!");pos;
             main();
         }
     }
