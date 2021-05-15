@@ -40,7 +40,7 @@ void setcolor(int ForgC) //ฟังก์ชันเปลี่ยนสี
  return;
  }
 
-//.......................................................................................................................................................................
+//.................................................................................................................................................................................
 void sett();//เวลาที่เล่น
 int t=30;
 int c=0;
@@ -51,33 +51,31 @@ void startgame();
 void scoreboard();
 void About_Game();
 void help();
-//.......................................................................................................................................................................
+//...............................................................................................................................................................................
+
+//................................................................................................................................................................................
 int main()//ฟังก์ชันหลัก
 {       int ch;
-
 	time_t t;
 	time(&t);
 	x=1;
 	system("cls");//cls คือเคลียร์หน้าจอ
 	pos;
 	setcolor(15) ;
-	printf("Speed Typing");
+	printf("Mini-Typing");
 	setcolor(10) ;
 	pos;
 	printf("%s",ctime(&t));
 	pos;
-    	ln pos;
+    ln pos;
 	if(c==0)
-	   {	printf("Enter player's name::");
+	   {	printf("Enter player's name :");
 		gets(name);
 	   }
 	   c++;
 	pos;ln pos;
-		printf("#..MAIN MENU..#");pos;
-		for(int testing=1; testing<=16; testing++){//ตรงนี้ไว้ดูสีว่าเลขไหน สีอะไร
-			setcolor(testing) ;
-			printf("%d ", testing);
-		}
+		printf("*..MAIN MENU..*");pos;
+
 		setcolor(10) ;
 		pos;
 		ln
@@ -86,7 +84,7 @@ int main()//ฟังก์ชันหลัก
 		pos;
 		printf("2.Scoreboard");
 		pos;
-		printf("3.Set the time limit::");
+		printf("3.Set the time limit :");
 		pos;
 		printf("4.Help");
 		pos;
@@ -123,7 +121,7 @@ void startgame()
 	x=2;
 	pos;
 	setcolor(12);
-	printf("#Select Difficulty#");pos;
+	printf("Select Difficulty");pos;
 	ln
 	pos;
 	printf("1.Easy");
@@ -168,7 +166,7 @@ void startgame()
 			gotoxy(20,8);
 			printf("....Type the following character....");
 			gotoxy(28,9);
-			printf("time spent=%d sec",time_spent);
+			printf("time spent = %d sec",time_spent);
 			
 			randx = rand()%108;
 			randx++;
@@ -208,10 +206,10 @@ void startgame()
 		speed=(count*60)/time_spent ;
 
 		if(time_spent<t-1)
-		printf("You  are looser!loser!loser!Game Over!");
+		printf("You lost! Game Over!");
 		else
 		{       setcolor(11);
-			printf("Times up !Game over!");
+			printf("Times up! Game over!");
 			pos;
 			setcolor(13);
 			if((speed>=40)&&(speed<=50))
@@ -222,7 +220,7 @@ void startgame()
 			else
 			if(speed>50)
 			{
-				printf("Nice work! You got Gold medal");
+				printf("Nice try! You got Gold medal");
 			}
 			else
 			printf("Sorry no medal! you need practise..");
@@ -259,11 +257,10 @@ void sett()  //set time limit
 {
 	int ch;
 	system("cls");
-	//rectangle(0,0,70,15);
 	setcolor(11);
 	x=5;
 	pos;
-	printf("Set the time limit for game::");
+	printf("Set the time limit for game :");
 	pos;
 	ln
 	pos;
@@ -293,7 +290,9 @@ void help()//คำแนะนำในการใช้
 	printf("=> Characters are displayed and random, you have to type them as fast as you can");gotoxy(15,10);
 	printf("=> Avoid incorrect typing otherwise game will be over");gotoxy(15,11);
 	setcolor(12);
-	printf("=> If you type wrong first character, the game will stop");
+	printf("=> If you type wrong first character, the game will stop");gotoxy(15,13);
+	setcolor(11);
+	printf("Press \"Enter\" for back to menu");
 	getch();main();
 }
 
@@ -302,9 +301,11 @@ void About_Game()
 {       system("cls");
 	gotoxy(7,7);
 	printf("Hello, this game is create for mini project");gotoxy(7,8);
-	printf("Thank you for credit from Shashi Kumar");
-	getch();
-	main();
+	printf("Thank you for credit from Shashi Kumar");gotoxy(7,10);
+	setcolor(11);
+	printf("Press \"Enter\" for back to menu");
+    getch();
+    main();
 }
 //.........................................................................
 void getscore(int score,int speed,int level)//ฟังก์ชันเอาคะแนนลงไฟล์
@@ -339,7 +340,7 @@ void scoreboard()//ฟังก์ชันหน้าโชว์คะแน�
 	printf("\n\n\tIf you choose Yes, your scores will be lost and the game will stop");
 	setcolor(10);
 	printf("\n\n\t1. Yes\n\t2. No\n\n\tEnter your choice::");
-    	scanf("%d", &choose);
+    scanf("%d", &choose);
 	if(choose == 1){
 		fopen("scoreboard.txt","w+");
 		main();
