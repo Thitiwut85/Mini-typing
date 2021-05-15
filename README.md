@@ -1,1 +1,1 @@
-# Typing Game
+# Mini-Typing
