@@ -1,7 +1,8 @@
 ## **สวัสดี นี่คือเกม typing**
-เกมที่ใช้ฝึกพิมพ์ เพื่อแข่งกับเวลา
+คุณอยากลองเล่นเกมที่พัฒนามาจากภาษา C ไหม?
+เราขอเสนอเกมฝึกพิมพ์ ที่สร้างขึ้นมาเพื่อความสนุกและเพิ่มทักษะในการพิมพ์ของคุณให้มากขึ้น
 
-### Markdown
+### แปะ Code
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
@@ -23,7 +24,7 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+![Image](https://cdn.discordapp.com/attachments/781395115662245900/843131489649819658/unknown.png)
 
 ### Jekyll Themes
 
