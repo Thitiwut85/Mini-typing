@@ -16,9 +16,9 @@
 
 
 ```markdown
-
 void startgame()
-{       int score=0,level=1,mode=100,count=0;
+{       
+	int score=0,level=1,mode=100,count=0;
 	clock_t begin;int time_spent,speed;
 	int r,letter,ch, ee;
 	delay(500);
