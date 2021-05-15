@@ -37,6 +37,10 @@ Syntax highlighted code block
 
 ![Image](https://cdn.discordapp.com/attachments/814903344803741728/843160109030572052/Main_menu.PNG)
 
+
+
 ![Image](https://cdn.discordapp.com/attachments/814903344803741728/843160112759177236/Select_Difficulty.PNG)
+
+
 
 ![Image](https://cdn.discordapp.com/attachments/814903344803741728/843162349270990848/Time_set.PNG)
