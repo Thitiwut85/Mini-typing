@@ -35,7 +35,9 @@ Syntax highlighted code block
 ```
 ## **ตัวอย่างภาพหน้าเมนู**
 
-![Image](https://cdn.discordapp.com/attachments/781395115662245900/843131489649819658/unknown.png)
+![Image](https://cdn.discordapp.com/attachments/814903344803741728/843160109030572052/Main_menu.PNG)
+![Image](https://cdn.discordapp.com/attachments/814903344803741728/843160112759177236/Select_Difficulty.PNG)
+![Image](https://cdn.discordapp.com/attachments/814903344803741728/843160115451920444/Time_set.PNG)
 
 ### Jekyll Themes
 
