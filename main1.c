@@ -226,7 +226,7 @@ void startgame()
 			printf("Sorry no medal! you need practise..");
 		}
 		pos;
-		printf("Total score is :: %d",score);
+		printf("Total score is : %d",score);
 		pos;
 
 		printf("Your net speed = %d letter per minute",speed);
@@ -237,7 +237,7 @@ void startgame()
 		printf("1. play again");pos;
 		printf("2. main menu");pos;
 		printf("3. exit"); pos;
-		printf("Enter your choice::");
+		printf("Enter your choice :");
 		scanf("%d",&ch);
 		switch(ch)
 		{
