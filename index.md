@@ -153,7 +153,8 @@ void startgame()
 				main();
 		}
 	}
-}```
+}
+```
 ## **ตัวอย่างภาพในเกม**
 
 ![Image](https://cdn.discordapp.com/attachments/814903344803741728/843160109030572052/Main_menu.PNG)
