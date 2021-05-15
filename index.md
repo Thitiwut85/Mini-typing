@@ -18,6 +18,7 @@
 ```markdown
 void startgame()
 {       
+	
 	int score=0,level=1,mode=100,count=0;
 	clock_t begin;int time_spent,speed;
 	int r,letter,ch, ee;
@@ -40,8 +41,7 @@ void startgame()
 	pos;
 	scanf("%d",&level);
 	if(level==4)
-	main();
-
+		main();
 	else
 	{   if(level==1)    //-----ถ้า level 1 คือตัวใหญ่
 	    	mode=65;
