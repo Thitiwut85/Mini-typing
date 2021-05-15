@@ -102,7 +102,7 @@ int main()//ฟังก์ชันหลัก
 	pos;
 	printf("%s",ctime(&t));
 	pos;
-    ln pos;
+    	ln pos;
 	if(c==0)
 	   {	printf("Enter player's name::");
 		gets(name);
@@ -143,7 +143,7 @@ int main()//ฟังก์ชันหลัก
 			default:main();
 		}
 
-getch();
+	getch();
 }
 
 //.......................................................................................................................................................................
@@ -339,62 +339,46 @@ void About_Game()
 	gotoxy(7,7);
 	printf("Hello, this game is mini project");gotoxy(7,8);
 	printf("Thank for credit from  Shashi Kumar");
-    getch();
-    main();
+    	getch();
+    	main();
 }
 //.........................................................................
 void getscore(int score,int speed,int level)//ฟังก์ชันเอาคะแนนลงไฟล์
 {
-	FILE *fp1, *fp2;
-	fp1=fopen("scoreboard.txt","a");
-	fp2=fopen("scoreboard_copy.txt","a");
+	FILE *fp;
+	fp=fopen("scoreboard.txt","a");
 	pos;
-	if(fp1==NULL)
-		printf("error in opening file");
-	if(fp2==NULL)
-		printf("error in opening file");
-	fprintf(fp1,"\nname=%s   score=%d    speed=%d    level=%d",name,score,speed,level);
-	fprintf(fp2,"\nname=%s   score=%d    speed=%d    level=%d",name,score,speed,level);
-	fclose(fp1);
-	fclose(fp2);
+	if(fp==NULL)
+	printf("error in opening file");
+	fprintf(fp,"\nname=%s   score=%d    speed=%d    level=%d",name,score,speed,level);
+	fclose(fp);
 	pos;
-	printf("score updated");
+	printf("scorecard updated");
 }
 
 //.......................................................................................................................................................................
 void scoreboard()//ฟังก์ชันหน้าโชว์คะแนน
-{       int ch,x=12, y=4;
-	FILE *fp1, *fp2;
-    char file1[] ="scoreboard.txt";
-    char file2[] ="scoreboard_copy.txt";
-    char curr;
-    int del, line_number = 0;
+{       int ch,x=12, y=4, del;
+	FILE *fp;
 	system("cls");
 	printf("\t\t\t....The scores are...\n");
-	fp1 = fopen(file1,"r");
-    fp2 = fopen(file2, "r");
-	while((ch=fgetc(fp2))!=EOF){	
+	fp = fopen("scoreboard.txt","r");
+	while((ch=fgetc(fp))!=EOF){	
 		printf("%c",ch);
 		if(ch == '\n'){
 			gotoxy(x,y);
 			y++;
 		}
 	}
-	printf("\n\nEnter the line number you want to delete : ");
-    scanf("%d", &del);
-    fp1 = fopen(file1,"r");
-    fp2 = fopen(file2, "w");
-    curr = getc(fp1);
-    if(curr!=EOF) {line_number =1;}
-    while(1){
-      if(del != line_number)
-        putc(curr, fp2);
-        curr = getc(fp1);
-        if(curr =='\n') line_number++;
-        if(curr == EOF) break;
-    }
-    fclose(fp1);
-    fclose(fp2);
-	getch();
-	main();
+	setcolor(12);
+	printf("\n\n\tYou want to reset your scores?");
+	setcolor(10);
+	printf("\n\n\t1. Yes\n\t2. No\n\n\tEnter your choice::");
+    	scanf("%d", &del);
+	if(del == 1){
+		remove("scoreboard.txt");
+	}
+	else if(del == 2){
+		main();
+	}
 }
