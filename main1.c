@@ -61,13 +61,21 @@ int main()//ฟังก์ชันหลัก
 	x=1;
 	system("cls");//cls คือเคลียร์หน้าจอ
 	pos;
-	setcolor(15) ;
-	printf("Mini-Typing");
+	setcolor(2);
+	printf("Mi");
+	setcolor(14);
+	printf("ni");
+	setcolor(15);
+	printf("-");
+	setcolor(4);
+	printf("Ty");
+	setcolor(12);
+	printf("ping");
 	setcolor(10) ;
 	pos;
 	printf("%s",ctime(&t));
 	pos;
-    ln pos;
+    	ln pos;
 	if(c==0)
 	   {	printf("Enter player's name :");
 		gets(name);
