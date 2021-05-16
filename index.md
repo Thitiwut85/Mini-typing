@@ -174,7 +174,6 @@ void startgame()
 <br /> <br />
 ![Image](https://cdn.discordapp.com/attachments/814903344803741728/843162349270990848/Time_set.PNG)
 <br /> <br />
-<br /> <br />
 ## **สมาชิกในกลุ่ม**
 * นายฉัตริน รักษา 63070025      
 * นายธนาพงศ์ ปทุมสีมา 63070080
