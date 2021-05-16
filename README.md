@@ -9,4 +9,4 @@
   แต่ถ้าชนะจะขึ้นว่าหมดเวลา พร้อมกับแสดงคะแนนกับเหรียญที่ได้และความเร็วว่าพิมพ์ได้กี่ตัวอักษรใน 1 นาที
 
 Link Website : https://thitiwut85.github.io/Mini-typing/
-* [website](https://thitiwut85.github.io/Mini-typing/)
+[website](https://thitiwut85.github.io/Mini-typing/)
