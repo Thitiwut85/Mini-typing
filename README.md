@@ -1,5 +1,9 @@
 # **Mini-Typing** ![](https://media.tenor.com/images/e494f2327fc7efc5c9695c0e2400bba2/tenor.gif)
 เป็นเกมที่พัฒนามาจากภาษา C ที่ใช้ฝึกพิมพ์ แข่งกับความเร็ว เพื่อพัฒนาทักษะการพิมพ์ของผู้เล่นให้ดีขึ้น
+
+> [website](https://thitiwut85.github.io/Mini-typing/)
+> [video]()
+
 ## ภายในเกมมีอะไรบ้าง?
 * ใช้แค่การพิมพ์เพียงอย่างเดียวในการเล่นเกม
 * ผู้เล่นสามารถเลือกระดับความยากของเกมได้ตามใจชอบ
@@ -10,7 +14,3 @@
 
 ## ตัวอย่างภาพในเกม
 ![](https://cdn.discordapp.com/attachments/814903344803741728/843160107175903252/Input_Name.PNG)
-
-> [website](https://thitiwut85.github.io/Mini-typing/)
-
-> [video]()
