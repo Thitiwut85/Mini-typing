@@ -1,5 +1,0 @@
-
-
-
-name=1   score=20    speed=40    level=1
-name=1   score=30    speed=45    level=1
