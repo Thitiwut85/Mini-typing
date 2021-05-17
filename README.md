@@ -3,7 +3,7 @@
 
 > [Website](https://thitiwut85.github.io/Mini-typing/)
 > 
-> [Video]()
+> [Video](https://youtu.be/o16Cq6ofKbg)
 
 
 ## ภายในเกมมีอะไรบ้าง?
